@@ -1,82 +1,115 @@
-🐶 Dog Adoption Search - React App
-This is a React-based Dog Adoption Search application that allows users to browse, filter, and favorite dogs available for adoption. Users can also generate a perfect match based on their selected favorites.
+# Dog Adoption App
 
-🚀 Live Demo
-🔗 View the Deployed App
+A React-based web application that helps users browse and find dogs available for adoption. Users can search through available dogs, filter by breed, sort results, favorite potential matches, and generate compatible matches based on their preferences.
 
-📌 Features
-🔍 Search & Filter Dogs
-Users can search for dogs based on different breeds.
-Sort dogs alphabetically (asc or desc).
-Pagination is implemented for smooth navigation.
-❤️ Favorite Dogs
-Users can add dogs to favorites and manage them.
-A favorites modal allows users to view all their selected dogs.
-🐾 Generate a Match
-Users can generate their perfect match based on selected favorites.
-The match modal displays the matched dog’s image, name, and breed.
-🎨 Responsive UI
-Fully mobile-friendly and responsive design.
-Uses CSS grid for a beautiful layout.
-Modals with scrolling for better usability.
-🔒 Authentication
-Users can log out using the authentication button.
-🛠 Tech Stack
-Frontend: React, CSS
-API Calls: Axios / Fetch
-State Management: React Hooks (useState, useEffect)
-Deployment: Vercel
-📂 Project Structure
-bash
-Copy
-Edit
-/src
- ├── /api               # API calls (fetch dogs, breeds, match)
- ├── /components        # Reusable components (DogCard, FilterBar, Pagination)
- ├── /contexts          # Authentication context
- ├── /pages             # Main pages (LoginPage.js, SearchPage.js)
- ├── /styles            # CSS files
- ├── App.js             # Root component
- ├── index.js           # Entry point
- ├── README.md          # This file
-📜 How to Run Locally
-1️⃣ Clone the Repository
+## Features
 
-sh
-Copy
-Edit
-git clone https://github.com/yourusername/dog-adoption-app.git
-cd dog-adoption-app
-2️⃣ Install Dependencies
+* User authentication (login/logout functionality)
+* Browse available dogs for adoption
+* Filter dogs by breed
+* Sort dogs alphabetically
+* Favorite multiple dogs
+* Generate matches based on favorited dogs
+* Responsive design for all screen sizes
+* Protected routes for authenticated users
+* Pagination for search results
 
-sh
-Copy
-Edit
-npm install
-3️⃣ Run the App
+## Technologies Used
 
-sh
-Copy
-Edit
-npm start
-4️⃣ Open in Browser
+* React 18
+* React Router v6
+* React Context for state management
+* REST API integration
+* Modern JavaScript (ES6+)
 
-The app runs at http://localhost:3000/
-🚀 Deployment
-The app is deployed at:
-🔗 YOUR_DEPLOYED_LINK_HERE
-To deploy on Vercel, run:
+## Getting Started
 
-sh
-Copy
-Edit
-npm run build
-And follow the Vercel deployment guide.
+### Prerequisites
 
-🤝 Contributions
-Feel free to fork this project, open issues, or submit PRs to improve it! 🚀
+* Node.js (v14 or higher)
+* npm or yarn
 
-📧 Contact
-For questions or feedback, reach out to:
-✉️ koppumadhu20202@gmail.com
-🔗 https://github.com/MadhuKoppu
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/dog-adoption-app.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd dog-adoption-app
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+The application will open in your default browser at `http://localhost:3000`.
+
+## Project Structure
+
+```
+src/
+├── api/           # API integration functions
+├── components/    # Reusable UI components
+├── contexts/      # React Context providers
+├── pages/         # Page components
+└── App.js         # Main application component
+```
+
+## API Integration
+
+The application integrates with a REST API at `https://frontend-take-home-service.fetch.com` and includes the following endpoints:
+
+* Authentication: `/auth/login`, `/auth/logout`
+* Dogs: `/dogs/search`, `/dogs/breeds`, `/dogs`, `/dogs/match`
+
+## Deployment
+
+This application is deployed on Vercel and can be accessed at [https://dog-adoption-app-eight.vercel.app](https://dog-adoption-app-eight.vercel.app).
+
+### Deploying to Vercel
+
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Login to Vercel:
+   ```bash
+   vercel login
+   ```
+
+3. Deploy the application:
+   ```bash
+   vercel
+   ```
+
+For production deployment:
+   ```bash
+   vercel --prod
+   ```
+
+Configure environment variables in the Vercel dashboard if needed.
+
+## Available Scripts
+
+* `npm start`: Runs the app in development mode
+* `npm test`: Launches the test runner
+* `npm run build`: Builds the app for production
+* `npm run eject`: Ejects from Create React App
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
