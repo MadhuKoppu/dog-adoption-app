@@ -73,7 +73,7 @@ The application integrates with a REST API at `https://frontend-take-home-servic
 
 ## Deployment
 
-This application is deployed on Vercel and can be accessed at [https://dog-adoption-app-eight.vercel.app](https://dog-adoption-app-eight.vercel.app).
+This application is deployed on Vercel and can be accessed at [Dog Adaption App](https://dog-adoption-app-eight.vercel.app).
 
 ### Deploying to Vercel
 
